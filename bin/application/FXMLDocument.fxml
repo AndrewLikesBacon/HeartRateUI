@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumentController">
+   <children>
+      <LineChart fx:id="LineChart" prefHeight="515.0" prefWidth="720.0" title="Heart Rate Over Time">
+        <xAxis>
+          <CategoryAxis label="Seconds into session" prefWidth="664.0" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" autoRanging="false" side="LEFT" upperBound="200.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
